@@ -5,12 +5,12 @@ var count = 0;
 button.onclick = function(){
    
     //make the request to the counter end point
-    var request = new XMLhttpRequest();
+    var request = new XMLHttpRequest();
     
     //if the state of the request change 
     request.onreadystatechange = function(){
         //if the request has been successfully done
-        if(request.readystate === XMLhttpRequest.DONE){
+        if(request.readystate === XMLHttpRequest.DONE){
             //request has been successfully completed
             if(request.status === 200){
                 //take the response from the request
