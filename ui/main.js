@@ -17,3 +17,10 @@ function moveLeft(){
 image.onclick = function(){
    setInterval( moveLeft, 200);
 };
+
+function incrementCount(){
+var count = 0;
+var countr = document.getElementById('cntr');
+count = count + 1;
+countr.innerHTML = countr;
+}
