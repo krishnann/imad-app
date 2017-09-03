@@ -8,6 +8,7 @@ element.innerHTML = 'hello world!';
 //change the position of an image 
 var image = document.getElementById('img');
 var marginLeft = 0;
+
 function moveLeft(){
     marginLeft = marginLeft+10;
     image.style.marginLeft = marginLeft + 'px';
