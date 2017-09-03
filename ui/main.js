@@ -4,5 +4,5 @@ var button = document.getElementById('cntrbtn');
 button.onclick = function(){
     count = count + 1;
     var data = document.getElementById('cntr');
-    data.innerHTML = count.toString();
+    data.innerHTML = data.toString();
 };
