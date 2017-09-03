@@ -20,8 +20,11 @@ button.onclick = function(){
                 var counter = request.responseText;
                 var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
-                
             }
         }
-    }
+    };
+    
+    //make request
+    request.open('GET', 'https://imad.hasura.io/counter', true);
+    request.send(null);
 };
