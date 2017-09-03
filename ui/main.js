@@ -25,6 +25,6 @@ button.onclick = function(){
     };
     
     //make request
-    request.open('GET', 'https://imad.hasura.io/counter', true);
+    request.open('GET', 'http://knaik0901.imad.hasura-app.io/counter', true);
     request.send(null);
 };
