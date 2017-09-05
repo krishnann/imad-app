@@ -25,3 +25,20 @@ button.onclick = function(){
     request.open('GET', 'http://knaik0901.imad.hasura-app.io/counter', true);
     request.send(null);
 };
+
+//code to get the names from index file and display the names on the same index file
+
+var naam = document.getElementById('username');
+var username = naam.value;
+
+var btn = document.getElementById('subtn');
+btn.onclick = function(){
+    var names = ['name1', 'name2', 'name3', 'name4', 'name5'];
+    var list = '';
+    for(var i = 0; i < names.length; i++){
+        list += '<li>'+names[i]+'</li>';
+    }
+    
+    var ulData = document.getElementById('listOfNames');
+    ulData.innerHTML = list;
+}
