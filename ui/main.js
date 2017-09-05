@@ -34,33 +34,14 @@ var username = naam.value;
 var btn = document.getElementById('subtn');
 btn.onclick = function(){
     
-        //make the request to the counter end point
-    var request = new XMLHttpRequest();
+    var names = ['name1', 'name2', 'name3', 'name4', 'name5'];
+    var list = '';
+    for(var i = 0; i < names.length; i++){
+        list += '<li>'+names[i]+'</li>';
+    }
     
-    //if the state of the request change 
-    request.onreadystatechange = function(){
-        //if the request has been successfully done
-        if(request.readyState === XMLHttpRequest.DONE){
-            //request has been successfully completed
-            if(request.status === 200){
-                //take the response from the request
-                var names = ['name1', 'name2', 'name3', 'name4', 'name5'];
-                var list = '';
-                for(var i = 0; i < names.length; i++){
-                    list += '<li>'+names[i]+'</li>';
-                }
-        
-                var ulData = document.getElementById('listOfNames');
-                ulData.innerHTML = list;
-                }
-        }
-    };
-    
-    //make request
-    request.open('GET', 'http://knaik0901.imad.hasura-app.io/send_name?name='+username, true);
-    request.send(null);
-    
-  
+    var ulData = document.getElementById('listOfNames');
+    ulData.innerHTML = list;
 };
 
 //then we have to make an request to the server
