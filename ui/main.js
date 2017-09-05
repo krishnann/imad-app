@@ -42,3 +42,5 @@ btn.onclick = function(){
     var ulData = document.getElementById('listOfNames');
     ulData.innerHTML = list;
 }
+
+//then we have to make an request to the server
