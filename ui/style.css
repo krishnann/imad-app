@@ -24,6 +24,6 @@ body {
     padding:100px;
 }
 
-/*.inbox{*/
-/*    text-align:center;*/
-/*}*/
+.inbox{
+    padding-left:center;
+}
