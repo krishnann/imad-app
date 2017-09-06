@@ -61,7 +61,7 @@ btn.onclick = function(){
     };
     
     //make request
-    request.open('GET', 'http://knaik0901.imad.hasura-app.io/send_name?name='+naam, true);
+    request.open('GET', 'http://knaik0901.imad.hasura-app.io/send_name?name='+username, true);
     request.send(null);
 
 };
