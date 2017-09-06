@@ -29,8 +29,7 @@
 
 
 //code to get the names from index file and display the names on the same index file
-var naam = document.getElementById('username');
-var username = naam.value;
+
 
 var btn = document.getElementById('subtn');
 
@@ -60,6 +59,9 @@ btn.onclick = function(){
     
     };
     
+    
+    var naam = document.getElementById('username');
+    var username = naam.value;
     //make request
     request.open('GET', 'http://knaik0901.imad.hasura-app.io/send_name?name='+username, true);
     request.send(null);
