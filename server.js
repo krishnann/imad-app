@@ -28,7 +28,7 @@ app.get('/counter', function (req, res){
     res.send(counter.toString());
 });
 
-var names = [];
+var names = [];//empty array
 app.get('/send_name', function(req, res){ //  /url?name=xxxx query parameter
     var name = req.query.name;
     names.push(name);
